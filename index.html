@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<div class="container vh-100">
+         <h1 class="text-center m-5">Bookmarker</h1>
+        <div class="container title">  
+            <h2 class=" text-center m-3">Bookmark your favorite sites</h2>
+            <div class="mb-3">
+                <label for="siteName" class="form-label fw-bolder">Site Name</label>
+                <input type="text" oninput="validateData(this)" class="form-control " id="siteName" placeholder="Bookmark Name">
+              </div>
+              <div class="mb-3">
+                <label for="siteURL" class="form-label fw-bolder">Site URL</label>
+                <input type="text" oninput="validateData(this)" class="form-control" id="siteURL" placeholder="Website URL">
+              </div>
+              <button type="button" class="btn offset-6 translate-middle-x w-25 mb-5 sub disabled">Submit</button>
+        </div>
+               <div class="container tab" >
+                <table class="table m-4">
+                <thead>
+                    <tr>
+                      <th scope="col">Index</th>
+                      <th scope="col">Website Name</th>
+                      <th scope="col">Visit</th>
+                      <th scope="col">Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody id="demo">
+
+
+                  </tbody>
+
+
+                  </table>
+                
+                
+        </div>
+        </div>
+       
+    <script src="js/index.js"></script>
+</body>
+</html>
